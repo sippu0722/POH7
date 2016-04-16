@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 		while (result % 10 == 0)
 			result /= 10;
-		result %= limit;	// *10;
+		result %= limit * 10;
 	}
 	std::cout << result % limit << std::endl;
 	return 0;
